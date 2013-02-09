@@ -3,6 +3,8 @@ psage
 
 Show running processes sorted by start time showing how long ago they were created
 
+Only tested on [SmartOS](http://smartos.org/)
+
 Install
 -------
 
