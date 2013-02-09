@@ -1,0 +1,26 @@
+{
+  "name": "psage",
+  "version": "0.0.0",
+  "description": "Show running processes sorted by start time showing how long ago they were created",
+  "main": "psage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:bahamas10/node-psage.git"
+  },
+  "keywords": [
+    "ps"
+  ],
+  "bin": {
+    "psage": "./psage"
+  },
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "license": "MIT",
+  "dependencies": {
+    "destruct": "0.0.1",
+    "relative-date": "~1.1.1",
+    "yatf": "~1.0.4"
+  }
+}
