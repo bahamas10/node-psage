@@ -1,6 +1,6 @@
 {
   "name": "psage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Show running processes sorted by start time showing how long ago they were created",
   "main": "./psage.js",
   "preferGlobal": true,
