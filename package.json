@@ -2,7 +2,7 @@
   "name": "psage",
   "version": "0.0.0",
   "description": "Show running processes sorted by start time showing how long ago they were created",
-  "main": "psage.js",
+  "main": "./psage.js",
   "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "ps"
   ],
   "bin": {
-    "psage": "./psage"
+    "psage": "./psage.js"
   },
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "license": "MIT",
