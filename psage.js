@@ -53,10 +53,12 @@ function finish() {
   ret.sort(sort);
   var data = [];
   ret.forEach(function(p) {
+    var stat = p.stat || {};
+    var mtime = stat.mtime || 'unknown';
     data.push([
-      p.stat.mtime.toISOString().cyan,
+      stat.mtime.toISOString().cyan,
       p.pid.magenta,
-      relativedate(p.stat.mtime).yellow,
+      (relativedate(mtime) || 'unknown').yellow,
       p.psinfo ? p.psinfo[21] : 'error'.red
     ]);
   });
@@ -64,5 +66,7 @@ function finish() {
 }
 
 function sort(a, b) {
+  var mtime = a.stat && a.stat.mtime;
+  mtime = mtime || Infinity;
   return a.stat.mtime < b.stat.mtime ? -1 : 1;
 }
